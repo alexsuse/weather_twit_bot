@@ -10,7 +10,7 @@ for i in statuses:
 	try:
 		api.PostRetweet(i.id)
 		print 'retweeting this!'
-		api.CreatFriendship(i.user.id)
+		api.CreateFriendship(i.user.id)
 	except twitter.TwitterError:
 		print 'must have retweeted this already!'
 
