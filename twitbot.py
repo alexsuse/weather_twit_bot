@@ -1,3 +1,4 @@
+#!/usr/bin/python
 import twitter
 import credentials as cr
 
