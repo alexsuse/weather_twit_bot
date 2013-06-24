@@ -12,9 +12,9 @@ statuses = []
 for s in search_terms:
 	statuses = statuses + api.GetSearch(s)
 
-perm = permutation(len(s))
+perm = permutation(len(statuses))
 
-for i in xrange(20):
+for i in xrange(min(20,len(statuses))):
 	try:
 		api.PostRetweet(statuses[perm[i]].id)
 		print 'retweeting this!'
